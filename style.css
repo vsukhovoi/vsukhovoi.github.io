@@ -158,3 +158,45 @@ section{padding:68px 0;border-top:1px solid var(--line)}.sec-label{font-family:v
     transform: none;
   }
 }
+
+/* ========================================
+   SECTION 03 — SELECTED WORK
+   ======================================== */
+/* Selected Work — seven projects, featured AI case */
+.work-section{padding:90px 0}
+.work-intro{max-width:760px;margin:0 0 34px;color:#aeb3d0;line-height:1.75}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.portfolio-card{min-width:0;display:flex;flex-direction:column;padding:28px;background:#24266d;border:1px solid #393c83;border-radius:16px;transition:transform .25s ease,border-color .25s ease}
+.portfolio-card:hover{transform:translateY(-4px);border-color:#fb923c}
+.portfolio-card-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.portfolio-card .num{color:#fb923c;font-size:.73rem;letter-spacing:.06em}
+.project-status{display:inline-flex;align-items:center;white-space:nowrap;border-radius:999px;padding:5px 10px;font-size:.7rem;font-weight:600}
+.status-live{color:#a5e9c1;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.27)}
+.status-beta{color:#fcd9a8;background:rgba(251,146,60,.11);border:1px solid rgba(251,146,60,.3)}
+.status-dev{color:#c9c5e9;background:rgba(167,139,250,.11);border:1px solid rgba(167,139,250,.28)}
+.status-published{color:#a5e9c1;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.27)}
+.portfolio-card h3{font-family:var(--f-head);color:#f4f3ff;font-size:1.35rem;line-height:1.35;margin:0 0 14px}
+.portfolio-subtitle{font-size:.85rem;color:#c0c4e2}
+.portfolio-card>p{color:#b8badd;line-height:1.7;font-size:.94rem;margin:0 0 22px}
+.portfolio-card .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;margin-bottom:18px}
+.portfolio-card .tag{display:inline-flex;align-items:center;white-space:normal}
+.portfolio-link{color:#fb923c;font-size:.9rem;font-weight:600;text-decoration:none;align-self:flex-start}
+.portfolio-link:hover,.featured-case-links a:hover{text-decoration:underline}
+.featured-ai-case{grid-column:1/-1;display:block;padding:32px}
+.featured-ai-case:hover{transform:none}
+.featured-case-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:start}
+.featured-case-visual{min-width:0}
+.featured-case-visual img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border-radius:12px}
+.image-caption{font-size:.8rem;color:#aeb3d0;margin:10px 0 0}
+.featured-case-content{min-width:0}
+.featured-case-content h3{font-size:clamp(1.6rem,2.8vw,2.3rem);margin:0 0 16px}
+.featured-case-lead{color:#d1d5e8;line-height:1.75;margin:0 0 25px}
+.case-detail{margin:0 0 20px}
+.case-detail h4{color:#fb923c;font-size:.9rem;margin:0 0 7px}
+.case-detail p{color:#b8badd;line-height:1.7;font-size:.92rem;margin:0}
+.featured-case-content .tags{margin:22px 0 0}
+.featured-case-links{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:24px}
+.featured-case-links a{color:#fb923c;text-decoration:none;font-size:.9rem;font-weight:600}
+@media(max-width:980px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-case-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.work-section{padding:65px 0}.portfolio-grid{grid-template-columns:1fr;gap:16px}.portfolio-card{padding:23px}.featured-ai-case{padding:23px}.featured-case-layout{gap:25px}}
+@media(prefers-reduced-motion:reduce){.portfolio-card{transition:none}.portfolio-card:hover{transform:none}}
